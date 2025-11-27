@@ -133,14 +133,20 @@
 }
 
 .stat-box {
-    padding: 20px;             /* bigger stat cards */
-    width: 180px;
-    background: #fff;
-    color: #000;
-    height: 150px;
-    border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  width: 190px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
     
 }
+
+.stat-box:hover {
+  transform: translateY(-5px);
+}
+
 .number{
     margin: 10px;
     color: blueviolet;
