@@ -146,13 +146,12 @@
 .stat-box:hover {
   transform: translateY(-5px);
 }
-
 .number{
     margin: 10px;
     color: blueviolet;
     font-style: oblique;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
 }
 .label{
     margin: 0;
