@@ -1,110 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylegallery.css">
-    <script src="https://kit.fontawesome.com/7df51f2998.js" crossorigin="anonymous"></script>
-    <title>Gallery</title>
-      <link rel="icon" type="image/png" href="image/M.png">
+    <title>Product - Djerba Running Club</title>
+    <link rel="stylesheet" href="produit1.css">
 </head>
 <body>
     <!-- Navigation -->
-    <!-- HEADER -->
     <section id="header">
-        <a href="Home.html"><img src="image/logo.png" id="Loge" class="Logoh" alt=""></a>
+        <a href="Home.html"><img src="/image/logo.png" id="Loge" class="Logoh" alt=""></a>
         <div>
             <ul id="navbar">
-                <li><a href="#" >Home</a></li>
-                <li><a href="About.html">About us</a></li>
-                <li><a href="Gallery.html" class="active" >Gallery</a></li>
-                <li><a href="Event.html">Event</a></li>
-                <li><a href="Product.html" >Products</a></li>
-                <li><a href="join.html" >Join Us</a></li>
+                <li><a href="/Home.html">Home</a></li>
+                <li><a href="/About.html">About us</a></li>
+                <li><a href="/Gallery.html">Gallery</a></li>
+                <li><a href="/Event.html">Event</a></li>
+                <li><a href="/Product.html"  class="active" >Products</a></li>
+                <li><a href="/join.html" >Join Us</a></li>
             </ul>
         </div>
     </section>
 
-<body>
-    <h1>Community Highlights!</h1>
-</body>
-<!-- ======= GALLERY SECTION ======= -->
-<div class="gallery-container">
-
-  <div class="masonry-grid">
-
-      <!-- VIDEO   -->
-    <div class="item">
-      <video src="image/WE RUN IN DJERBA le tour de l'île - Mustapha Chennoufi (1080p, h264).mp4" controls muted onclick="openLightboxVideo(this)" autoplay loop  ></video>
-    </div>
-          <!-- images-->
-           
-    <div class="item">
-      <img src="image/0b6674d2-b05a-4032-8bab-95bfd028b149.jpeg" alt="Running Club Photo 1" onclick="openLightbox(this)">
-    </div>
-
+    <!-- Product Section -->
+    <div class="product-container">
+        <div class="product-image">
+            <img src="/image/Tshirts/t6-removebg-preview.png" width='300' height='400' viewBox='0 0 300 400'%3E%3Crect width='300' height='400' fill='%23f0f0f0' rx='20'/%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='24' fill='%23999'%3EProduct Image%3C/text%3E%3C/svg%3E" alt="Sleeveless Running Jersey">
+            <img src="/image/product3-removebg-preview.png" width='300' height='400' viewBox='0 0 300 400'%3E%3Crect width='300' height='400' fill='%23f0f0f0' rx='20'/%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='24' fill='%23999'%3EProduct Image%3C/text%3E%3C/svg%3E" alt="Sleeveless Running Jersey">
     
-    <div class="item">
-      <img src="image/f0eb85fb-83d2-47b7-879c-f0c825512d97.jpeg" alt="Running Club Photo 2" onclick="openLightbox(this)">
-    </div>
+        </div>
 
-    <div class="item">
-      <img src="image/d5f5dda8-f723-4af1-9581-d3194eeb948d.jpeg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-     <div class="item">
-      <img src="image/rr.jpg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-     <div class="item">
-      <img src="image/A.jpeg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-    <div class="item">
-      <img src="image/f3.jpg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-     <div class="item">
-      <img src="image/BIN.jpg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-   <div class="item">
-      <img src="image/PP.jpeg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-  
-     <div class="item">
-      <img src="image/f1.jpg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-      <div class="item">
-      <img src="image/f2.jpg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-    <div class="item">
-      <img src="image/weruncom.png" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-    <div class="item">
-      <img src="image/c.jpg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-     <div class="item">
-      <img src="image/f4.jpg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-    <div class="item">
-      <img src="image/fc14effe-39ec-4539-a1ba-5cf674bea222.jpeg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
+        <div class="product-details">
+            <h1>Sleeveless Model 3:</h1>
+            <p class="product-description">
+                Lightweight and breathable, perfect for training under the Djerba sun. 
+                Its quick-dry fabric keeps you cool and comfortable, offering full 
+                freedom of movement during every session.
+            </p>
 
-  
+            <div class="size-selection">
+                <h3>choose size</h3>
+                <div class="size-options">
+                    <button class="size-btn" onclick="selectSize(this)">2XL</button>
+                    <button class="size-btn" onclick="selectSize(this)">XL</button>
+                    <button class="size-btn" onclick="selectSize(this)">L</button>
+                    <button class="size-btn" onclick="selectSize(this)">M</button>
+                    <button class="size-btn" onclick="selectSize(this)">S</button>
+                    <button class="size-btn" onclick="selectSize(this)">XS</button>
+                </div>
+            </div>
 
-  
-  </div>
-</div>
-
-
-<!-- ======= LIGHTBOX ======= -->
-
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <span class="close">&times;</span>
-  <img id="lightbox-img" class="lightbox-content">
-  <video id="lightbox-video" class="lightbox-content" controls></video>
-</div>
-
-
-
-<!-- --------footer------- -->
-
+            <div class="price-section">
+                <h3>Buy</h3>
+                <div class="price">42.000 dt</div>
+            </div>
+        </div>
+    </div>
+ <div class="scroll">
+    <ul>
+       <a href="produit2.html"> 
+         <li class="word" >Previous</li>
+       </a>
+        <a class="plink" href="produit4.html">
+            <li class="word">Next</li>
+        </a>
+    </ul>
+ </div>
+</body>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-grid">
@@ -118,9 +80,9 @@
                 <div class="footer-section">
                     <h3>Quick links</h3>
                     <ul class="quick-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
                         <li><a href="#events">Events</a></li>
                         <li><a href="#product">Product</a></li>
                         <li><a href="#join">Join us</a></li>
@@ -171,4 +133,8 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="script.js"></script>
+
 </html>
