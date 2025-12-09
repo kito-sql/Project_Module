@@ -67,6 +67,26 @@
     bottom: -4px;
     left: 20px;
 }
+#audioToggle {
+  background: #0077b6;   /* pick your theme color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.25s;
+  margin-left: 1%;
+}
+
+#audioToggle:hover {
+  background: #0096c7;
+  transform: scale(1.05);
+}
+
+#audioToggle:active {
+  transform: scale(0.97);
+}
 
 /* === Masonry Grid === */
 .gallery-container {

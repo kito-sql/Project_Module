@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylegallery.css">
+    <link rel="stylesheet" href="styleHome.css">
     <script src="https://kit.fontawesome.com/7df51f2998.js" crossorigin="anonymous"></script>
-    <title>Gallery</title>
-      <link rel="icon" type="image/png" href="image/M.png">
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="image/M.png">
+
 
 </head>
 <body>
     <!-- Navigation -->
     <!-- HEADER -->
     <section id="header">
-        <a href="Home.html"><img src="/image/logo.png" id="Loge" class="Logoh" alt=""></a>
+        <a href="Home.html"><img src="image/logo.png" id="Loge" class="Logoh" alt=""></a>
         <div>
             <ul id="navbar">
-                <li><a href="Home.html" >Home</a></li>
+                <li><a href="#" class="active"  >Home</a></li>
                 <li><a href="About.html">About us</a></li>
-                <li><a href="#" class="active" >Gallery</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
                 <li><a href="Event.html">Event</a></li>
                 <li><a href="Product.html" >Products</a></li>
                 <li><a href="join.html" >Join Us</a></li>
@@ -26,111 +27,106 @@
         </div>
     </section>
 
+    <!-- HERO SECTION -->
+    <section id="home" class="aclass">
+        <div class="hero-text">
+            <h1 class="disgnelogo">WE RUN IN DJERBA</h1>
+            <p>From the heart of Djerba, we run as one family.</p>
+            <p>United by love for the sport.</p>
+            <a href="join.html" class="join-btn">Join the Club</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="bclass">
+        <div class="circle-group"></div>
+
+        <h1 class="title_fonte"  >ABOUT US</h1>
+        
+        <p>We are more than a running club — we are a family.</p>
+        <p>United by our love for sport, health, and the beautiful island of Djerba.</p>
+        <p>Founded in 2023, the Djerba Running Club began as a small group of passionate runners.</p>
+        <p>Today, we are a big family united by one goal: run together, stay healthy, and spread positive energy.</p>
+
+        <div class="stats">
+            <div class="stat-box">
+                <p class="number">750+</p>
+                <p class="label">Members</p>
+            </div>
+            <div class="stat-box">
+                <p class="number">2+</p>
+                <p class="label">Years Experience</p>
+            </div>
+            <div class="stat-box">
+                <p class="number">250+</p>
+                <p class="label">Events</p>
+            </div>
+        </div>
+      <a href="About.html" class="learnMore"> <p class="learn">Learn More !</p></a>
+    </section>
+
+    <!-- COMMUNITY SECTION -->
+    <section class="cclass">
+        <h1 class="title_fonte" >OUR COMMUNITY</h1>
+        <div class="textc">
+            <p>Our club brings people together through running, biking, and outdoor adventures.</p>
+            <p>We run, ride, and explore together with passion and friendship.</p>
+            <p>We share the love of sport, nature, and challenges that make every event unforgettable.</p>
+            <p>From marathons to triathlons, we move as one family.</p>
+        </div>
+    </section>
+
+    <!-- SOCIAL PAGES -->
+    <section class="dclass">
+        <h1 class="title_fonte"  >PAGES</h1>
+        <div class="icons">
+            <div class="icon-block">
+                <img src="image/ins2.png" alt="Instagram">
+                <p>Instagram</p>
+            </div>
+            <div class="icon-block">
+                <img src="image/facebook2.png" alt="Facebook">
+                <p>Facebook</p>
+            </div>
+            <div class="icon-block">
+                <img src="image/tiktok2.png" alt="TikTok">
+                <p>TikTok</p>
+            </div>
+        </div>
+    </section> 
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+
+        <div class="contact-info">
+            <h1 class="title_fonte"   >CONTACT US</h1>
+            <p>You can contact us through our social media pages, by phone, email, or visit us directly at our club in Djerba. We’ll be happy to meet you.</p>
+
+            <h2>Our Studio</h2>
+            <p>Djerba Midoun Sports Center, Avenue de la Liberté, Tunisia<br>Djerba Houmt Souk Beach Track, Route de la Corniche, Tunisia</p>
+
+            <h2>Phone Number</h2>
+            <p>Ahmed Dhia – +216 55 123 456<br>Samar Ben Ali – +216 98 654 321</p>
+
+            <h2>Email</h2>
+            <p>contact@djerbarunners.com<br>djerbarunningclub@gmail.com</p>
+        </div>
+
+        <div class="contact-image">
+            <img src="image/dhia.jpg" alt="Runner">
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+
 <body>
-    <h1>Community Highlights!</h1>
-</body>
-<button id="audioToggle">🔊 Play Ambient</button>
-
-<audio id="ambientAudio" loop src="image/Chasing Horizons.mp3" preload="auto"></audio>
-
-
-<!-- ======= GALLERY SECTION ======= -->
-<div class="gallery-container">
-
-  <div class="masonry-grid">
-
-      <!-- VIDEO   -->
-    <div class="item">
-      <video src="/image/WE RUN IN DJERBA le tour de l'île - Mustapha Chennoufi (1080p, h264).mp4" controls muted onclick="openLightboxVideo(this)" autoplay loop  ></video>
-    </div>
-          <!-- images-->
-           
-    <div class="item">
-      <img src="image/0b6674d2-b05a-4032-8bab-95bfd028b149.jpeg" alt="Running Club Photo 1" onclick="openLightbox(this)">
-    </div>
-
-    
-    <div class="item">
-      <img src="image/f0eb85fb-83d2-47b7-879c-f0c825512d97.jpeg" alt="Running Club Photo 2" onclick="openLightbox(this)">
-    </div>
-
-    <div class="item">
-      <img src="image/d5f5dda8-f723-4af1-9581-d3194eeb948d.jpeg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-     <div class="item">
-      <img src="image/rr.jpg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-     <div class="item">
-      <img src="image/A.jpeg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-    <div class="item">
-      <img src="image/f3.jpg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-     <div class="item">
-      <img src="image/BIN.jpg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-   <div class="item">
-      <img src="image/PP.jpeg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-  
-     <div class="item">
-      <img src="image/f1.jpg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-      <div class="item">
-      <img src="image/f2.jpg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-    <div class="item">
-      <img src="image/weruncom.png" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-    <div class="item">
-      <img src="image/c.jpg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-     <div class="item">
-      <img src="image/f4.jpg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-    <div class="item">
-      <img src="image/fc14effe-39ec-4539-a1ba-5cf674bea222.jpeg" alt="Running Club Photo 3" onclick="openLightbox(this)">
-    </div>
-
-  
-
-  
-  </div>
-</div>
-
-
-<!-- ======= LIGHTBOX ======= -->
-
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <span class="close">&times;</span>
-  <img id="lightbox-img" class="lightbox-content">
-  <video id="lightbox-video" class="lightbox-content" controls></video>
-</div>
-
-<script>
-  const audio = document.getElementById("ambientAudio");
-  const btn = document.getElementById("audioToggle");
-
-  btn.addEventListener("click", () => {
-    if (audio.paused) {
-      audio.play();
-      btn.textContent = "🔈 Stop Ambient";
-    } else {
-      audio.pause();
-      audio.currentTime = 0; // reset
-      btn.textContent = "🔊 Play Ambient";
-    }
-  });
-</script>
-
-<!-- --------footer------- -->
-
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-grid">
                 <!-- Left Section - About -->
                 <div class="footer-section">
-                    <h2 classe="logo_footer">WE RUN IN DJERBA</h2>
+                    <h2 >WE RUN IN DJERBA</h2>
                     <p>Connect. Track. Run. Join a community of runners, share your progress, and enjoy every step!</p>
                 </div>
 
@@ -191,4 +187,7 @@
             </div>
         </div>
     </footer>
+
+</html>
+</body>
 </html>
