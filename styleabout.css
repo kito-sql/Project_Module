@@ -117,6 +117,7 @@
         }
 
         /* Team Section */
+        
         .team {
             
             display: flex;
@@ -247,20 +248,130 @@
             resize: vertical;
         }
 .butt{
-    margin-top: 20px;
-    margin-left: 10px;
-    padding: 10px;
+    padding: 10px 20px;
+    background: #007bff;
     color: white;
-    background-color: lightgreen;
+    border: none;
     border-radius: 8px;
-    border: transparent;
-    
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
 
+}
+.butt:hover{
+   background: #004aad;
 }
 
  /* body */
 
- 
+ /* Overall section styling */
+.members-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.members-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.members-intro {
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+/* Cards container */
+.members-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual member card */
+.member-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px 20px;
+    width: 300px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 22px rgba(0,0,0,0.12);
+}
+
+/* Photo */
+.member-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Name + description */
+.member-card h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    color: #1f1f1f;
+}
+
+.member-card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Stats table */
+.member-stats {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.member-stats th,
+.member-stats td {
+    padding: 10px;
+    font-size: 0.95rem;
+}
+
+.member-stats th {
+    text-align: left;
+    color: #333;
+}
+
+.member-stats td {
+    text-align: right;
+    color: #444;
+}
+
+/* Subtle table border */
+.member-stats tr {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Remove last border */
+.member-stats tr:last-child {
+    border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .members-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
      
 .footer {
             background-color: #325cba;
