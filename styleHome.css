@@ -193,27 +193,24 @@
 }
 
 .learn{
-   margin-top: 30px;
-   
-    position: relative;
-    left: 46%;
-    width: 160px;
-    color: blueviolet;
-   background: white;
-   border-radius: 15%;
-   transition: transform 0.5s ease ;
-   text-decoration: none ;
+   display: inline-block;
+    margin-top: 35px;
+    background: white;
+    color: #26266a;
+    padding: 1px 24px;
+    border-radius: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    
   
 }
-.learnMore{
-    text-decoration: none ;
-    transition: transform 0.2s ease-in-out;
-}
+
 
 .learn:hover{
-    transform: translateX(17px);
     
-    color: blueviolet;
+    background: #26266a;
+    color: white;
+    border:white 1px solid ;
 }
 /* .bclass {
     text-align: center;
@@ -260,35 +257,87 @@
     line-height: 1.9;
     font-size: 22px;
 }
+  /* event */
 
-/* SOCIAL */
-.dclass {
-    background: #26266a;
+.home-events-preview {
     
-    color: white;
+    padding: 70px 20px;
+    background: #26266a;
     text-align: center;
-    padding: 90px 60px 150px 60px;      /* increased height */
 }
 
-.dclass h1 {
-    font-size: 120px;
-    margin-bottom: 80px;
+.preview-title {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 8px;
 }
 
-.icons {
+.preview-text {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* Card container */
+.preview-cards {
     display: flex;
     justify-content: center;
-    gap: 150px;              
+    gap: 25px;
     flex-wrap: wrap;
 }
 
-.icon-block img {
-    width: 60px;             
+/* Small simple cards */
+.preview-card {
+    background: #f7f7f7;
+    padding: 25px 20px;
+    width: 270px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.5s ease-in-out, box-shadow 0.25s ease;
 }
 
-.icon-block p {
+.preview-card h3 {
     font-size: 20px;
-    margin-top: 10px;
+    color: #1e2a38;
+    margin-bottom: 10px;
+}
+
+.preview-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.preview-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* Button */
+.view-more-btn {
+    display: inline-block;
+    margin-top: 35px;
+    background: white;
+    color: #26266a;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.view-more-btn:hover {
+    background: #26266a;
+    color: white;
+    border:white 1px solid ;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .preview-card {
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
 /* CONTACT */
