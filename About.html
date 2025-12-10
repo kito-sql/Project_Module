@@ -76,35 +76,63 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33393.573706681585!2d10.833846174610091!3d33.862285027495396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13aaa509f6da0fd9%3A0xa3e9d919f767ff88!2sCornish%20Walkway%20by%20the%20Sea!5e0!3m2!1sen!2sus!4v1764665923879!5m2!1sen!2sus" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                        
         </div>
-        <div class="message-form">
-            <h3>Send a message</h3>
-            <form>
-                <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email" id="email" placeholder="example@email.com" required>
-                </div>
-                <div class="form-group">
-                    <label>Send a message</label>
-                    <textarea id="message" placeholder="Your message here..." required></textarea>
-                    <button class="butt">SEND </button>
-                </div>
-            </form>
+  <div class="message-form">
+    <h3>Send a message</h3>
+    <form id="msgForm">
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="email" placeholder="example@email.com" required>
         </div>
+
+        <div class="form-group">
+            <label>Send a message</label>
+            <textarea id="message" placeholder="Your message here..." required></textarea>
+        </div>
+
+        <button type="button" class="butt" onclick="confirmer()">SEND</button>
+        <p id="p"></p>
+    </form>
+</div>
+
     </section>
 
-<script>
-function sendMessage() {
 
+<script>
+function confirmer() {
     const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();
+    const output = document.getElementById("p");
 
     
     if (email === "" || message === "") {
-        alert("Please fill in both fields before sending.");
+        output.textContent = "Please fill in both fields!";
+        output.style.color = "red";
+        return; 
+    }
+
+    
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        output.textContent = "Please enter a valid email address!";
+        output.style.color = "red";
         return;
+    }
+
+    
+    const confirmation = confirm("Press OK if you want to send!");
+    if (confirmation) {
+        output.textContent = "Your mail was sent successfully!";
+        output.style.color = "green";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        
+    } else {
+        output.textContent = "Canceled!";
+        output.style.color = "orange";
     }
 }
 </script>
+
 </body>
 
  <footer class="footer">
