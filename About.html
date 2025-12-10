@@ -81,16 +81,31 @@
             <form>
                 <div class="form-group">
                     <label>Email Address</label>
-                    <input type="email" placeholder="example@email.com" required>
+                    <input type="email" id="email" placeholder="example@email.com" required>
                 </div>
                 <div class="form-group">
                     <label>Send a message</label>
-                    <textarea placeholder="Your message here..." required></textarea>
+                    <textarea id="message" placeholder="Your message here..." required></textarea>
                     <button class="butt">SEND </button>
                 </div>
             </form>
         </div>
     </section>
+
+<script>
+function sendMessage() {
+
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    
+    if (email === "" || message === "") {
+        alert("Please fill in both fields before sending.");
+        return;
+    }
+}
+</script>
+</body>
 
  <footer class="footer">
         <div class="footer-container">
@@ -159,6 +174,6 @@
         </div>
     </footer>
 
-</html>
-</body>
+
+
 </html>
